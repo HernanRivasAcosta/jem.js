@@ -38,6 +38,13 @@ handle_post(Req, State) ->
 
 (just remember you are not accepting ``application/json`` but ``application/erlang`` on the content types)
 
+## Roadmap
+
+* Add support for ArrayBuffers as binaries in json (I am still not sure how I would decide when parsing whether to use ArrayBuffers of Strings)
+* Performance improvements
+* Tests
+* Start using ``ArrayBuffer.transfer()`` as soon as it stops being an experimental feature
+
 ## Contact Us
 For **questions** or **general comments** regarding the use of this library,
 please use our public [hipchat room](http://inaka.net/hipchat).
